@@ -1,0 +1,14 @@
+RefSafe Lite — Changelog
+========================
+
+Version 1.0.0 — Initial Release
+--------------------------------
+- Scan open scenes for broken references
+- Missing script detection on GameObjects
+- Missing object reference detection in components
+- Three-tier severity classification (Critical, Warning, Info)
+- Color-coded severity indicators (Red, Amber, Blue)
+- Scene-wise results listing
+- Select and ping affected GameObjects
+- Manual scan trigger from editor window
+- Unity 2021 LTS, 2022 LTS, 2023 LTS, and Unity 6 support
