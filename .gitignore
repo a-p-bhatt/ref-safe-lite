@@ -97,3 +97,18 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+# Ignore everything inside Assets
+[Aa]ssets/*
+
+# But do NOT ignore RefSafe folder
+![Aa]ssets/RefSafe/
+![Aa]ssets/RefSafe/**
+
+# Unity also needs the .meta files
+![Aa]ssets/RefSafe.meta
+![Aa]ssets/RefSafe/**.meta
+
+#ignore the RefSafe Documentation folder and meta file, which can get large and is not needed in version control
+[Aa]ssets/RefSafe/Documentation/
+[Aa]ssets/RefSafe/Documentation.meta
