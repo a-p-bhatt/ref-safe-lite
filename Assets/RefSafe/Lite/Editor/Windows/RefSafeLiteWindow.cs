@@ -256,7 +256,7 @@ namespace RefSafe.Lite
 
             if (GUILayout.Button(new GUIContent("★ Get Pro", "Upgrade to RefSafe Pro for Project-Wide scanning, Exports, and more!"), getProStyle, GUILayout.Width(75)))
             {
-                Application.OpenURL("https://assetstore.unity.com/"); // TODO: Replace with Pro asset store link
+                Application.OpenURL("https://u3d.as/3S3y");
             }
 
             GUILayout.Space(10);
