@@ -1,6 +1,14 @@
 RefSafe Lite — Changelog
 ========================
 
+Version 2.0.0 — Documentation and Upgrade Messaging Refresh
+-----------------------------------------------------------
+- Updated the Lite release version to 2.0.0
+- Refreshed README positioning for clearer Lite vs Pro comparison
+- Added stronger upgrade guidance for users who need project-wide validation
+- Clarified when Lite is enough and when RefSafe Pro is the better fit
+- Aligned release messaging with the current RefSafe Pro offering
+
 Version 1.0.0 — Initial Release
 --------------------------------
 - Scan open scenes for broken references
