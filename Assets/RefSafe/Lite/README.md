@@ -1,153 +1,173 @@
-# RefSafe Lite — Free Missing Reference Validator for Unity
+# 🚀 RefSafe Lite — Catch Missing References Before They Break Your Game
 
-RefSafe Lite helps you catch missing scripts and broken object references in your currently open Unity scenes, for free.
+> Stop chasing NullReferenceExceptions. Fix them in seconds.
 
-It is built for solo developers and smaller projects that want a simple editor tool to validate scene health before hitting Play, testing a feature, or preparing a small update.
+RefSafe Lite is a **fast, zero-setup Unity editor tool** that scans your open scenes and instantly finds:
 
-If you need full project coverage, batch-style validation, or exportable reports for production workflows, RefSafe Pro is the upgrade path.
+- ❌ Missing scripts on GameObjects
+- ❌ Broken object references in components
+- ❌ Hidden scene issues
 
-## What RefSafe Lite Does
+👉 So you fix problems **before hitting Play**
 
-- Scans **open scenes** for broken references
-- Detects **missing scripts** on GameObjects
-- Detects **missing object references** in components
-- Uses **severity color coding** for Critical, Warning, and Info issues
-- Lists results by scene for quick review
-- Supports **Select & Ping** so you can jump to affected GameObjects instantly
-- Supports Unity **2021 LTS, 2022 LTS, 2023 LTS, and Unity 6**
+✅ **No dependencies. No setup. Just import and use.**
 
-## Installation
+---
 
-1. Download or clone this repository.
-2. Copy `Assets/RefSafe/Lite` into your Unity project's `Assets` folder.
-3. Open **Tools > RefSafe > Lite**.
+- ⭐ **Need full project validation, auto-fix, and CI/CD workflows?**
+- 👉 **Upgrade to RefSafe Pro:** [Unity Asset Store](https://u3d.as/3S3y)
 
-## Quick Start
+---
 
-1. Open the scene or scenes you want to validate in Unity.
-2. Go to **Tools > RefSafe > Lite**.
-3. Click **Scan**.
-4. Review the results and use **Select & Ping** to jump directly to the affected object.
+## 😤 The Reality (Every Unity Dev Knows This)
 
-## Why Upgrade to RefSafe Pro
+- You hit Play → 💥 _NullReferenceException_
+- You search manually → waste hours
+- You miss something → bugs reach production
 
-RefSafe Lite is intentionally focused: it helps you validate what is already open in the editor.
+---
 
-RefSafe Pro is for the moment when that is no longer enough. If you want to validate more than the scenes you currently have loaded, catch broader project health issues before release, or build a repeatable validation workflow for a team, Pro removes the manual work and gives you much broader coverage.
+## ✅ What RefSafe Lite Does
 
-RefSafe Pro is better when you need to:
+RefSafe scans your **currently open scenes** and shows exactly what’s broken:
 
-- scan your **entire project** instead of only open scenes,
-- validate **all scenes** and **build settings** without opening everything manually,
-- detect broken references and structural issues across **prefabs**, **ScriptableObjects**, **materials**, and supported project assets,
-- catch deeper validation problems like **missing prefab instances**, **broken UnityEvents**, **invalid layers**, **invalid materials**, **shader errors**, **broken Addressables**, and **huge transforms**,
-- run **changed-only** and broader project validation workflows,
-- monitor long scans with **progress and cancel support**,
-- narrow down results with **filtering, search, diff tracking, and batch review tools**,
-- fix supported issues faster with **built-in fixers** and **Fix All**,
-- share findings with teammates using **exportable reports** and **CI-friendly workflows**,
-- use **reference finding**, **dependency views**, **cleaner tools**, and **health trends** to manage larger projects over time,
-- extend RefSafe for studio workflows with **custom rules**, **custom fixers**, and **custom exporters**,
-- work more confidently on larger projects, team projects, or release builds.
+- Detects missing scripts on GameObjects
+- Detects missing object references in components
 
-## Lite vs Pro
+And lets you:
 
-| Feature                                           | Lite | Pro |
-| ------------------------------------------------- | :--: | :-: |
-| Open Scenes Scan                                  |  ✅  | ✅  |
-| All Scenes in Build Settings                      |  ❌  | ✅  |
-| All Project Scenes                                |  ❌  | ✅  |
-| Entire Project Scan                               |  ❌  | ✅  |
-| Prefab Scanning                                   |  ❌  | ✅  |
-| ScriptableObject Scanning                         |  ❌  | ✅  |
-| Material Validation                               |  ❌  | ✅  |
-| Project Settings / Deleted Build Scene Validation |  ❌  | ✅  |
-| Unloaded Asset Validation                         |  ❌  | ✅  |
-| Changed-Only Incremental Scan                     |  ❌  | ✅  |
-| Context Menu Validation                           |  ❌  | ✅  |
-| Drag-and-Drop Validation                          |  ❌  | ✅  |
-| Missing Script Detection                          |  ✅  | ✅  |
-| Missing Reference Detection                       |  ✅  | ✅  |
-| Missing Serialized Reference Detection            |  ✅  | ✅  |
-| Missing Prefab Detection                          |  ❌  | ✅  |
-| Broken UnityEvent Detection                       |  ❌  | ✅  |
-| Broken Addressable Detection                      |  ❌  | ✅  |
-| Duplicate Component Detection                     |  ❌  | ✅  |
-| Invalid Layer Detection                           |  ❌  | ✅  |
-| Invalid Material Detection                        |  ❌  | ✅  |
-| Shader Error Detection                            |  ❌  | ✅  |
-| Huge Transform Detection                          |  ❌  | ✅  |
-| Severity Color Coding                             |  ✅  | ✅  |
-| Three Severity Levels                             |  ✅  | ✅  |
-| Scene-Grouped Results                             |  ✅  | ✅  |
-| Severity Summary Counts                           |  ✅  | ✅  |
-| Scan Duration Display                             |  ✅  | ✅  |
-| Select Affected Objects                           |  ✅  | ✅  |
-| Ping Affected Objects                             |  ✅  | ✅  |
-| Copy Hierarchy Path                               |  ✅  | ✅  |
-| Progress Bar + Cancel                             |  ❌  | ✅  |
-| Result Search                                     |  ❌  | ✅  |
-| Result Filtering by Type                          |  ❌  | ✅  |
-| Result Filtering by Severity                      |  ❌  | ✅  |
-| Result Filtering by Scene Visibility              |  ❌  | ✅  |
-| Diff vs Previous Scan                             |  ❌  | ✅  |
-| Batch Review Workflows                            |  ❌  | ✅  |
-| Built-In Fixers                                   |  ❌  | ✅  |
-| Fix All                                           |  ❌  | ✅  |
-| Export CSV Reports                                |  ❌  | ✅  |
-| Export JSON Reports                               |  ❌  | ✅  |
-| Export HTML Reports                               |  ❌  | ✅  |
-| Export TXT Reports                                |  ❌  | ✅  |
-| Export Markdown Reports                           |  ❌  | ✅  |
-| Reference Finder                                  |  ❌  | ✅  |
-| Cached Dependency Map                             |  ❌  | ✅  |
-| Dependency Graph View                             |  ❌  | ✅  |
-| Unused Asset Cleaner                              |  ❌  | ✅  |
-| Empty Folder Cleanup                              |  ❌  | ✅  |
-| Scan History                                      |  ❌  | ✅  |
-| Health Score and Trends                           |  ❌  | ✅  |
-| Build Validation Hook                             |  ❌  | ✅  |
-| CLI / CI Batchmode Support                        |  ❌  | ✅  |
-| Auto-Scan on Change                               |  ❌  | ✅  |
-| Keyboard Shortcuts                                |  ❌  | ✅  |
-| In-Editor Notifications                           |  ❌  | ✅  |
-| Custom Validation Rules SDK                       |  ❌  | ✅  |
-| Custom Issue Fixers SDK                           |  ❌  | ✅  |
-| Custom Report Exporters SDK                       |  ❌  | ✅  |
-| Large Project Workflow Support                    |  ❌  | ✅  |
+- ✔ Jump directly to the problem
+- ✔ Identify issues instantly
+- ✔ Fix them in seconds
 
-## Which Version Is Right for You
+---
 
-**Stay on Lite if:**
+## 🎥 How Lite Works
 
-- you only need to validate the scenes you are actively editing,
-- you want a free tool for basic scene-level reference checks,
-- your workflow does not require exports or project-wide review.
+1. Open `Tools → RefSafe → Lite`
+2. Click **Scan**
+3. Instantly see all issues in the open scene
+4. Click → jump to object
+5. Fix → done
+
+⚡ Simple. Fast. Focused.
+
+---
+
+## 💡 Why Developers Use RefSafe
+
+- ⚡ Save hours of debugging every week
+- 🎯 Jump directly to broken objects
+- 🧠 Catch issues before QA or release
+- 🔍 Understand scene health instantly
+- 🚀 Ship more stable builds
+
+---
+
+## 🧰 What You Get (Lite)
+
+- ✅ Scan **open scenes only**
+- ✅ Detect **missing scripts**
+- ✅ Detect **missing object references**
+- ✅ Severity color coding (**Critical, Warning, Info**)
+- ✅ Scene-grouped results for quick review
+- ✅ **Select & Ping** navigation to jump instantly
+- ✅ Supports **Unity 2021 LTS, 2022 LTS, 2023 LTS, and Unity 6**
+- ✅ **Zero dependencies** (works out of the box)
+
+👉 Perfect for quick validation during development
+
+---
+
+# 🚀 RefSafe Pro — Built for Real Projects
+
+> Lite helps you check scenes.
+> **Pro helps you control your entire project.**
+
+---
+
+## 🔥 What You Unlock with Pro
+
+- 🔍 Scan your **entire project (not just open scenes)**
+- 🧩 Validate **prefabs, ScriptableObjects, materials**
+- ⚡ Select all issues and fix them instantly with **Fix All**
+- 📊 Export reports (CSV, JSON, HTML)
+- 🤖 Run validation in **CI/CD pipelines**
+- 🔎 Filter, search, and batch-review thousands of issues
+- 📈 Track project health over time
+
+---
+
+## ⚖️ Lite vs Pro (Full Comparison)
+
+| Feature                     | Lite    | Pro     |
+| --------------------------- | ------- | ------- |
+| Scan Open Scenes            | ✅      | ✅      |
+| Scan Entire Project         | ❌      | ✅      |
+| Detect Missing Scripts      | ✅      | ✅      |
+| Detect Broken References    | ✅      | ✅      |
+| Severity-Based Issue View   | ✅      | ✅      |
+| Scene-Grouped Results       | ✅      | ✅      |
+| Select & Ping Navigation    | ✅      | ✅      |
+| Prefab Validation           | ❌      | ✅      |
+| ScriptableObject Validation | ❌      | ✅      |
+| Auto Fix Issues             | ❌      | ✅      |
+| Batch Processing            | ❌      | ✅      |
+| Export Reports              | ❌      | ✅      |
+| CI/CD Integration           | ❌      | ✅      |
+| Project Health Tracking     | ❌      | ✅      |
+| Dependencies                | ❌ None | ❌ None |
+
+---
+
+## ⚡ Quick Start
+
+1. Import into Unity
+2. Open `Tools → RefSafe → Lite`
+3. Click **Scan**
+4. Fix issues instantly
+
+Done ✅
+
+---
+
+## 🎯 Who Should Use This?
+
+**Use Lite if:**
+
+- You want a free debugging tool
+- You work on small projects
+- You need quick scene validation
 
 **Upgrade to Pro if:**
 
-- you are preparing release builds,
-- you work with many scenes, prefabs, ScriptableObjects, materials, or build settings,
-- you want broader validation without manually opening assets,
-- you need visibility beyond the scenes currently open in the editor,
-- you want CI-ready validation, exports, or batch workflows,
-- you want built-in fixers, history, trends, or project-cleaning tools,
-- you want to extend the validator with studio-specific rules or exporters,
-- you need cleaner review workflows for clients, teammates, or QA,
-- you want a faster path from scan results to actionable project-wide cleanup.
+- You have multiple scenes/assets
+- You want automation & reports
+- You care about production stability
+- You want to save hours every week
 
-## Upgrade to Pro
+---
 
-If RefSafe Lite is already helping you, RefSafe Pro is the next step when you want full-project confidence.
+## 🚀 Upgrade to RefSafe Pro
 
-Get RefSafe Pro on the Unity Asset Store:
+If RefSafe Lite already saves you time,
+RefSafe Pro will **save you hours every week**.
 
-[Upgrade to RefSafe Pro](https://u3d.as/3S3y)
+- 👉 Full project scanning
+- 👉 Auto-fix issues
+- 👉 CI/CD validation
+- 👉 Exportable reports
 
-## Support
+🔥 **Get it now:** [Unity Asset Store](https://u3d.as/3S3y)
 
-- **Issues & Bug Reports:** [GitHub Issues](https://github.com/a-p-bhatt/ref-safe-lite/issues)
+---
 
-## License
+## 💬 Support
 
-RefSafe Lite is released under the [MIT License](LICENSE.txt). See `LICENSE.txt` for details.
+- GitHub Issues: [Report](https://github.com/a-p-bhatt/ref-safe-lite/issues)
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](./LICENSE.txt).
